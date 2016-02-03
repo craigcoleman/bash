@@ -1,0 +1,7 @@
+Add a user
+#useradd cwc
+#passwd cwc
+#mkdir /home/cwc
+#chown cwc:users -R /home/cwc
+Give the user sudo and dialout privilege
+usermod -a -G sudo,dialout cwc
