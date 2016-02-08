@@ -1,5 +1,7 @@
 Add a user
-#useradd cwc
+#useradd -m -G users,wheel,audio -s /bin/bash cwc
+
+Set a password.
 #passwd cwc
 #mkdir /home/cwc
 #chown cwc:users -R /home/cwc
