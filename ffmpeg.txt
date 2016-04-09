@@ -1,0 +1,11 @@
+Turn a video to X images
+
+ffmpeg -i video.mpg image%d.jpg
+
+images to a movie
+ffmpeg -f image2 -i file-%d.jpg video.mpg
+
+$ ffmpeg -i tarzan.mp4 -ss 00:00:12.0 -c copy -t 00:00:04.0 output2.mp4
+
+start at 12 seconds then use 4 seconds of video
+$ ffmpeg -i tarzan.mp4 -ss 00:00:12.0 -c copy -t 00:00:04.0 output2.mp4
